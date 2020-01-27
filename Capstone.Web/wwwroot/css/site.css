@@ -1,0 +1,168 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/* Main Page Styles */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block {
+    display: block;
+}
+.park-block {
+    margin-bottom: 20px;
+}
+
+.park-img {
+    margin-right: 2%;
+}
+
+.survey-item {
+    width: 50%;
+}
+
+.radio-label {
+    margin: 0 5px 0 5px;
+}
+
+
+/*Logo in the header*/
+#Logo {
+    max-height:33%;
+    max-width:33%;
+}
+
+#HomeImage {
+    display:inline;
+    width: 50%;
+}
+
+#HomeName {
+    display: inline-block;
+}
+
+#HomeDescription{
+    display: inline-block;
+}
+
+/*Survey Views*/
+#SurveyHeader{
+    text-align: left;
+}
+
+#SurveyButton{
+    display:flex;
+    justify-content:center;
+}
+
+.fav-park-line {
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.fav-park-img {
+    max-height: 25%;
+    max-width: 20%;
+}
+
+#AllParksImage {
+    display: compact;
+    max-height: 40%;
+    max-width: 35%;
+}
+
+#AllParksDescription{
+    text-anchor:middle;
+}
+
+#DetailsWeather{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+.weather-model:first-of-type {
+    border: 3px #5af757 solid;
+    padding: 5px;
+    margin-right: 20px;
+}
+.weather-model {
+    border: 1px black dashed;
+    padding: 3px;
+    margin-right: 10px;
+}
+
+.weather-model:first-of-type > .weather-img{
+    height: 250px;
+}
+.weather-model > .weather-img{
+    height: 125px;
+}
+.weather-model:first-of-type > .weather-temp-group{
+    display: flex;
+    justify-content: space-around;
+}
+.weather-model > .weather.temp-group{
+    display: block;
+}
+
+.weather-temp {
+    display: flex;
+    justify-content: center;
+}
+
+.weather-temp-label {
+    margin-right: 5px;
+}
+
+.weather-temp-high {
+    background-color: #b0e2b0;
+}
+
+.weather-temp-low {
+    background-color: #efb8b8;
+}
+
+.weather-model:first-of-type > .weather-description {
+    display: block;
+}
+
+.weather-description {
+    display: none;
+}

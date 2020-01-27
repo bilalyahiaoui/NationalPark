@@ -1,0 +1,42 @@
+﻿@model Park
+@{
+    ViewData["Title"] = "Details";
+}
+<div id="DetailsBody">
+    <h2>Details</h2>
+
+    <img src="~/images/parks/@(Model.ParkCode).jpg " height="300" width="800" />
+
+    <h3>Park Name: @Model.ParkName </h3>
+    <p>@Model.ParkDescription</p>
+    <br />
+    <p>Number of Animal Species: @Model.NumberOfAnimalSpecies</p>
+    <P>Number of Campsites: @Model.NumberOfCampsites</P>
+    <p>State: @Model.State</p>
+    <P>Year Founded: @Model.YearFounded</P>
+    <P>Miles of Trail: @Model.MilesOfTrail</P>
+    <p>Annual Visitor Count: @Model.AnnualVisitorCount</p>
+    <p>Climate: @Model.Climate</p>
+    <p>Elevation (feet): @Model.ElevationInFeet</p>
+    <p>Park Code: @Model.ParkCode</p>
+
+</div>
+<div id="DetailsWeather">
+    @foreach (Weather item in Model.weather)
+    {   
+        <div class="weather-model">
+            <partial name="_Weather" model="item" />
+        </div>
+    }
+</div>
+<div>
+    <form id="TemperatureConvert" asp-controller="Parks" asp-action="Details" method="get" >
+        <input type="radio" id="degreeType" name="degreeType" value="Fahrenheit" /><label for="degreeType">Fahrenheit</label>
+        <input type="radio" id="degreeType" name="degreeType" value="Celsius" /><label for="degreeType">Celsius</label>
+@*<input type="hidden" value="fahrenheit" name="DegreeType "/>*@
+        <input type="hidden" value="@Model.ParkCode" name="ParkCode"/>
+
+        <input type="submit" value="Convert Temperatures"/>
+        
+    </form>
+</div>

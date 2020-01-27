@@ -1,0 +1,20 @@
+﻿@model List<FavoriteParksViewModel>
+@{
+    ViewData["Title"] = "FavoriteParks";
+}
+
+<div id="FavoritesHeader">
+    <h2>Our Favorite Parks</h2>
+    <br />
+    <h5 id="FavoriteParksDescription">Here are our beloved parks and how many people have left glowing reviews for them.</h5>
+    <br />
+</div>
+@foreach (FavoriteParksViewModel favorites in Model) //(favorites.ParkCode)3.jpg is fan submissions.
+{
+    <div class="flex fav-park-line">
+        <img class="fav-park-img" src="~/images/parks/@(favorites.ParkCode).jpg" />
+        <p class="fav-park-name">Park Name: @favorites.ParkName</p>
+        <p class="fav-num-survey"> Number of Surveys: @favorites.SurveyCount</p>
+    </div>
+}
+

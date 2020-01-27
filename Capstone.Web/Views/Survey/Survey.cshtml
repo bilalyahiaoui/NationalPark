@@ -1,0 +1,50 @@
+﻿@model Survey
+@{
+    ViewData["Title"] = "Survey";
+}
+
+<div id="SurveyHeader">
+    <h2>Welcome to our Survey Page!</h2>
+    <p>
+        Please select your favorite park, along with your email, state of residence, and your general level of activity. We'll be using this information to
+        help our parks grow as well as help you find our users find the best park for them! Check back later for some fan submissions of our parks' beauty!
+    </p>
+    <br />
+</div>
+<form id="SurveyBody" asp-controller="Survey" asp-action="Survey" method="post">
+    <div class="flex survey-item" id="SurveyPark">
+        <label for="ParkCode" typeof="">Favorite National Park</label>
+        <div>
+            <select asp-for="ParkCode" asp-items="Survey.ListOfNationalParks"></select>
+            <span asp-validation-for="ParkCode" style="color:red"></span>
+        </div> 
+    </div>
+    <div class="flex survey-item" id="SurveyEmail">
+        <label asp-for="EmailAddress">Your email</label>
+        <div>
+            <input asp-for="EmailAddress" />
+            <span asp-validation-for="EmailAddress" style="color:red"></span>
+        </div>
+    </div>
+    <div class="flex survey-item" id="SurveyResidence">
+        <label for="State" typeof="">State of residence</label>
+        <div>
+            <select asp-for="State" asp-items="Survey.ListOfStates"></select>
+            <span asp-validation-for="State" style="color:red"></span>
+        </div>
+    </div>
+    <div class="flex survey-item" id="SurveyActivityLevelButtons">
+        <label for="Activity Level">Activity level</label>
+        <div>
+            <input type="radio" id="ActivityLevel" name="activityLevel" value="Inactive" /><label class="radio-label" for="ActivtyLevel">Inactive</label>
+            <input type="radio" id="ActivityLevel" name="activityLevel" value="Sedentary" /><label class="radio-label" for="ActivtyLevel">Sedentary</label>
+            <input type="radio" id="ActivityLevel" name="activityLevel" value="Active" /><label class="radio-label" for="ActivtyLevel">Active</label>
+            <input type="radio" id="ActivityLevel" name="activityLevel" value="Extremely Active" /><label class="radio-label" for="ActivtyLevel">Extremely Active</label>
+            <span asp-validation-for="ActivityLevel" style="color:red"></span>
+        </div>
+    </div>
+    <br />
+    <div id="SurveyButton">
+        <input type="submit" value="Submit"/>
+    </div>
+</form>

@@ -1,0 +1,61 @@
+﻿@model Weather
+@{
+    ViewData["Title"] = "_Weather";
+}
+
+<img class="weather-img" src="~/images/weather/@(Model.Forecast.Replace(" ", "")).png " />
+@if (Model.DegreeType != "Celsius")
+{
+    <div class="weather-temp-group">
+        <div class="weather-temp">
+            <label class="weather-temp-label">High</label>
+            <p class="weather-temp-high"> @Model.High</p>
+        </div>
+        <div class="weather-temp">
+            <label class="weather-temp-label">Low</label>
+            <p class="weather-temp-low"> @Model.Low</p>
+        </div>
+    </div>
+}
+else
+{
+    <div class="weather-temp-group">
+        <div class="weather-temp">
+            <label class="weather-temp-label">High</label>
+            <p class="weather-temp-high"> @Model.CelsiusHigh</p>
+        </div>
+        <div class="weather-temp">
+            <label class="weather-temp-label">Low</label>
+            <p class="weather-temp-low"> @Model.CelsiusLow</p>
+        </div>
+    </div>
+}
+
+@if (Model.Forecast == "snow")
+{
+    <p class="weather-description">Make sure to pack snowshoes.</p>
+}
+else if (Model.Forecast == "rain")
+{
+    <p class="weather-description">Make sure to wear waterproof shoes.</p>
+}
+else if (Model.Forecast == "thunderstorms")
+{
+    <p class="weather-description">Seek shelter and avoid hiking on exposed ridges.</p>
+}
+else if (Model.Forecast == "sunny")
+{
+    <p class="weather-description">Make sure to bring sunblock.</p>
+}
+else if (Model.High > 75)
+{
+    <p class="weather-description">Bring an extra gallon of water.</p>
+}
+else if (Model.Low < 20)
+{
+    <p class="weather-description">Be aware of the dangers of fridig temperatures.</p>
+}
+else if ((Model.High - Model.Low) > 20)
+{
+    <p class="weather-description">Wear breathable layers.</p>
+}

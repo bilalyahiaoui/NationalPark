@@ -1,0 +1,125 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\bilal\\Documents\\TechElevator\\bilalyahiaoui-c\\csharp-capstone-module-3-team-0\\dotnet\\CapstoneTests\\CapstoneTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\bilal\\Documents\\TechElevator\\bilalyahiaoui-c\\csharp-capstone-module-3-team-0\\dotnet\\Capstone.Web\\Capstone.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bilal\\Documents\\TechElevator\\bilalyahiaoui-c\\csharp-capstone-module-3-team-0\\dotnet\\Capstone.Web\\Capstone.Web.csproj",
+        "projectName": "Capstone.Web",
+        "projectPath": "C:\\Users\\bilal\\Documents\\TechElevator\\bilalyahiaoui-c\\csharp-capstone-module-3-team-0\\dotnet\\Capstone.Web\\Capstone.Web.csproj",
+        "packagesPath": "C:\\Users\\bilal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bilal\\Documents\\TechElevator\\bilalyahiaoui-c\\csharp-capstone-module-3-team-0\\dotnet\\Capstone.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\bilal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.30, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.9, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\bilal\\Documents\\TechElevator\\bilalyahiaoui-c\\csharp-capstone-module-3-team-0\\dotnet\\CapstoneTests\\CapstoneTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bilal\\Documents\\TechElevator\\bilalyahiaoui-c\\csharp-capstone-module-3-team-0\\dotnet\\CapstoneTests\\CapstoneTests.csproj",
+        "projectName": "CapstoneTests",
+        "projectPath": "C:\\Users\\bilal\\Documents\\TechElevator\\bilalyahiaoui-c\\csharp-capstone-module-3-team-0\\dotnet\\CapstoneTests\\CapstoneTests.csproj",
+        "packagesPath": "C:\\Users\\bilal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bilal\\Documents\\TechElevator\\bilalyahiaoui-c\\csharp-capstone-module-3-team-0\\dotnet\\CapstoneTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\bilal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\bilal\\Documents\\TechElevator\\bilalyahiaoui-c\\csharp-capstone-module-3-team-0\\dotnet\\Capstone.Web\\Capstone.Web.csproj": {
+                "projectPath": "C:\\Users\\bilal\\Documents\\TechElevator\\bilalyahiaoui-c\\csharp-capstone-module-3-team-0\\dotnet\\Capstone.Web\\Capstone.Web.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
